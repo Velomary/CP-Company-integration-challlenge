@@ -13,7 +13,7 @@ body{
 }
 .navbar{
     height: 50px;
-    animation: navfadding .5s ease-in-out;
+    animation: navfadding .5s ease;
 }
 .navbar .liste{
     display: flex;
@@ -236,11 +236,10 @@ li {
         height: 100%;
         overflow: fixed;
         z-index: 1;
-        background: hsla(0, 0%, 0%, 0.1);
         padding-top: 10vh;
-        backdrop-filter: blur(.6rem);
         border: none;
-        box-shadow: 1px .4px 29px 3px rgb(15, 15, 15);
+        background-color: black;
+        box-shadow: 1px .4px 29px rgb(15, 15, 15);
         transition: ease .3s;
         transform: translateX(-100%);
     }
