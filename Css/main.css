@@ -193,7 +193,11 @@ li {
     background-color: black;
     animation: rideau .7s ease-in-out forwards;
     animation-delay: 1.4s;
-
+}
+.first:hover, .second:hover, .third:hover{
+    transform: translateY(-10px);
+    z-index: 4;
+    transition: all .5s;
 }
 .bars{
     position: absolute;
