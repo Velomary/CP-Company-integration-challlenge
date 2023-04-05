@@ -61,9 +61,19 @@ li {
 }
 .icon a{
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 20px;
+    display: inline-block;
 }
+.icon li{
+    padding: 5px;
+    margin-left: -3px;
+}
+.icon li:hover a {
+    transform: scale(1.5);
+    transition: all .5s;
+}
+
 .logo{
     position: absolute;
     right: 50%;
