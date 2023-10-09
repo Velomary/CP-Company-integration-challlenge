@@ -62,7 +62,7 @@ li {
 .icon a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 2vw;
     display: inline-block;
 }
 .icon li{
@@ -85,14 +85,14 @@ li {
     font-size: 50px;
     font-family: 'time new roman', Times, serif;
     font-size: calc(
-        4000vw / 1018
+        3400vw / 1018
     );
     
 }
 .logo p {
     text-align: center;
     letter-spacing: 4px;
-    font-size: calc(1000vw / 1018);
+    font-size: calc(950vw / 1018);
 }
 .logo span{
     color: var(--marron);
@@ -153,19 +153,19 @@ li {
 }
 .image .first{
     background-image: url(../Pic/PXL_20220830_054536498.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 .image .second{
     background-image: url(../Pic/PXL_20220830_060522461~2.jpg);
-    background-size: cover;
+    background-size: 130%;
     background-repeat: no-repeat;
     background-position: center;
 }
 .image .third{
     background-image: url(../Pic/PXL_20220830_054709890.PORTRAIT.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-position: bottom;
     background-repeat: no-repeat;
 }
@@ -194,8 +194,13 @@ li {
     animation: rideau .7s ease-in-out forwards;
     animation-delay: 1.4s;
 }
-.first:hover, .second:hover, .third:hover{
-    transform: translateY(-10px);
+.first:hover, .third:hover{
+    background-size: 110%;
+    z-index: 4;
+    transition: all .5s;
+}
+.second:hover{
+    background-size: 145%;
     z-index: 4;
     transition: all .5s;
 }
@@ -236,10 +241,23 @@ li {
         transform: translateY(-100%);
     }
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:900px) {
+    .image .first,.image .third{
+        background-size: 210%;
+    }
+    .image .second{
+        background-size: 220%;
+    }
+    .image .first:hover, .image .third:hover{
+        background-size: 230%;
+    }
+    .image .second:hover{
+        background-size: 240%;
+    }
     .navbar .bars{
         display: block;
         cursor: pointer;
+        font-size: 3.5vw;
         z-index: 2;
     }  
     .liste .item {
@@ -252,8 +270,7 @@ li {
         z-index: 1;
         padding-top: 10vh;
         border: none;
-        background-color: black;
-        box-shadow: 1px .4px 29px rgb(15, 15, 15);
+        background-color: rgba(0, 0, 0, 0.897);
         transition: ease .3s;
         transform: translateX(-100%);
     }
