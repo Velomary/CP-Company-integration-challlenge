@@ -62,7 +62,8 @@ li {
 .icon a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 2vw;
+    font-size: 1.5vw;
+    font-weight: 10;
     display: inline-block;
 }
 .icon li{
@@ -286,8 +287,8 @@ li {
         opacity: 1;
     }
     
-    .liste .icon{
-        font-size:5px ;
+    .liste .icon a{
+        font-size:2.5vw ;
     }
 }
 
